@@ -1,0 +1,7 @@
+img.player-photo {
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

@@ -1,0 +1,70 @@
+.table-container {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .table-header {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .table-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+  .table-row img.player-photo {
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .table-cell {
+    padding: 0 10px;
+  }
+  
+  .table-cell.flag {
+    margin-right: 10px;
+  }
+  
+  .table-cell.rating {
+    background-color: #3a3a3a;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .table-cell.rating.current {
+    background-color: #4caf50; /* Verde para la valoración actual */
+  }
+  
+  .table-cell.rating.potential {
+    background-color: #8bc34a; /* Verde más claro para el potencial */
+  }
+  
+  .table-team {
+    display: flex;
+    align-items: center;
+  }
+  
+  .table-team img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .table-team .team-name {
+    margin-right: 10px;
+  }
+  
