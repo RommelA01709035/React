@@ -1,5 +1,6 @@
-import './App.css'
-import { Home } from './Home.jsx'
+import { useState } from 'react';
+import './App.css';
+import { Home } from './Home.jsx';
 
 
 //componente es una factoria de elementos
@@ -10,27 +11,43 @@ import { Home } from './Home.jsx'
 //Puedes crear componentes dentro de otros componentes
 //owo es el uso de children en react
 
-export function App() {
-  const formatUserName = (userName)  => `@${userName}`
+//doom virtual es actualizar el componente 
+// pero se renderiza lo mismo aunque no lo veas en el doom
+//userstae es un hug
+//debemos generar valores initiliazeVariable y despues en el archivo 
+//de componente mandarlos como prop
 
+export function App() {
+  const formatUserName = (userName) => `@${userName}`;
+  const [name, setName] = useState('midudev');
+  
   return (
     <div className='App'>
-    
-    <Home 
-    formatUserName={formatUserName} 
-    isFollowing 
-    userName="midudev"
-    name="Miguel Ángel Durán">
-    owo
-    owo
-    owo
+      <Home 
+        formatUserName={formatUserName} 
+        isFollowing={true} 
+        userName="midudev"
+        name="Miguel Ángel Durán"
+      >
+        owo owo owo
+      </Home>
 
-    </Home>
-    <Home formatUserName = {formatUserName} isFollowing={false}userName="elon musk" name="Elon Musk"> 
+      <Home 
+        formatUserName={formatUserName} 
+        isFollowing={false} 
+        userName="elon_musk"
+        name="Elon Musk"
+      /> 
 
-    </Home>
+      <Home 
+        userName={name}
+        formatUserName={formatUserName} 
+        isFollowing={false} 
+      /> 
+
+      <button onClick={() => setName('pedromichel')}>
+        Cambiar Nombre
+      </button>
     </div>
-    
-  )
+  );
 }
-
