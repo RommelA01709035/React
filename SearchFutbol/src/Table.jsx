@@ -2,15 +2,14 @@ import React from 'react';
 import './Table.css';
 import RowTable from './RowTable';
 
-const Table = ({ players }) => {
+export function Table  ({ players })  {
   return (
     <div className="table-container">
-      <div className="table-header">
-        <span>Nombre</span>
-        <span>Edad</span>
-        <span>Valoración</span>
-        <span>Posición</span>
-        <span>Equipo & Contrato</span>
+      <div className="columns is-vcentered table-header">
+        <div className="column"><span>Nombre</span></div>
+        <div className="column"><span>Edad</span></div>
+        <div className="column"><span>Valoración</span></div>
+        <div className="column"><span>Equipo & Contrato</span></div>
       </div>
       {players.map((player, index) => (
         <RowTable key={index} player={player} />

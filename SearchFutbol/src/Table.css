@@ -46,11 +46,11 @@
   }
   
   .table-cell.rating.current {
-    background-color: #4caf50; /* Verde para la valoración actual */
+    background-color: #4caf50; 
   }
   
   .table-cell.rating.potential {
-    background-color: #8bc34a; /* Verde más claro para el potencial */
+    background-color: #8bc34a; 
   }
   
   .table-team {
@@ -68,3 +68,29 @@
     margin-right: 10px;
   }
   
+.table-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.columns.is-vcentered {
+  display: flex;
+  align-items: center;
+}
+
+.table-header .column,
+.table-row .column {
+  text-align: left;
+}
+
+.table-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.table-row {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+

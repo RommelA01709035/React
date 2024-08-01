@@ -29,6 +29,19 @@ const players = [
     teamName: "Villarreal",
     contract: "2020 ~ 2025",
   },
+  {
+    userName: "jorgecuenca",
+    name: "Jorge Cuenca",
+    nationalityFlag: "ruta_a_bandera_españa.jpg",
+    position: "DF LI",
+    age: 23,
+    currentRating: 74,
+    potentialRating: 80,
+    teamLogo: "ruta_a_logo_villarreal.jpg",
+    teamName: "Villarreal",
+    contract: "2020 ~ 2025",
+  },
+  
 ];
 
 function App() {
