@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.table-row img {
+  width: 40px;
+  height: auto;
+}

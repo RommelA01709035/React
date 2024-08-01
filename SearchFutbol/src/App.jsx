@@ -6,6 +6,7 @@ import Table from './Table';
 
 const players = [
   {
+    number: 1,
     userName: "midudev",
     name: "C. Summerville",
     nationalityFlag: "ruta_a_bandera.jpg",
@@ -18,6 +19,7 @@ const players = [
     contract: "2020 ~ 2026",
   },
   {
+    number: 2,
     userName: "jorgecuenca",
     name: "Jorge Cuenca",
     nationalityFlag: "ruta_a_bandera_españa.jpg",
@@ -30,6 +32,7 @@ const players = [
     contract: "2020 ~ 2025",
   },
   {
+    number: 3,
     userName: "jorgecuenca",
     name: "Jorge Cuenca",
     nationalityFlag: "ruta_a_bandera_españa.jpg",
