@@ -3,7 +3,33 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Table from './Table';
-import PhotoProfile from './PhotoProfile';
+
+const players = [
+  {
+    userName: "midudev",
+    name: "C. Summerville",
+    nationalityFlag: "ruta_a_bandera.jpg",
+    position: "MI MD",
+    age: 21,
+    currentRating: 76,
+    potentialRating: 84,
+    teamLogo: "ruta_a_logo_equipo.jpg",
+    teamName: "Leeds United",
+    contract: "2020 ~ 2026",
+  },
+  {
+    userName: "jorgecuenca",
+    name: "Jorge Cuenca",
+    nationalityFlag: "ruta_a_bandera_españa.jpg",
+    position: "DF LI",
+    age: 23,
+    currentRating: 74,
+    potentialRating: 80,
+    teamLogo: "ruta_a_logo_villarreal.jpg",
+    teamName: "Villarreal",
+    contract: "2020 ~ 2025",
+  },
+];
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,7 +56,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Table />
+      <Table players={players} />
     </>
   );
 }
